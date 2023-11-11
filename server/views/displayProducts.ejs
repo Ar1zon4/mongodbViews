@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <% user.forEach(users=>{  %>
+    <p><%=users.name %></p>
+    <p><%=users.description%></p>
+    <p><%=users.price%></p>
+
+    <a href="http://localhost:4000/update/<%- users._id %>">Update</a>
+    <a href="http://localhost:4000/delete/<%- users._id %>">Delete</a>
+
+   <% })%>
+
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <form action="/update" method="post">
+        <label for="">Product Name</label>
+        <input type="text" name="name" id="" value="<%- user.name %>" >
+
+        <label for="">Description</label>
+        <input type="text" name="description" value="<%- user.description %>">
+
+        <label for="">Price</label>
+        <input type="text" name="price" value="<%- user.price %>" >
+        
+        <input type="text" name="id" value="<%- user._id %>">
+
+        <button style="margin: 0 auto;" type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
